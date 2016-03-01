@@ -25,6 +25,7 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 ## Some helpful docs
 * Paul Bourke - Converting a fisheye image into a panoramic or perspective projection - http://paulbourke.net/dome/fish2/
 * Another attempt using opencv instead of quartz: https://github.com/kscottz/dewarp/blob/master/fisheye/defish.py
+* Another attempt use processing.org PDE: https://github.com/theta360developers/THETA-S-LiveViewer-P5
 * Another nice blog post: http://www.kscottz.com/fish-eye-lens-dewarping-and-panorama-stiching/
 * Theta-S camera: https://theta360.com/en/about/theta/s.html
 
