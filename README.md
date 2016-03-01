@@ -23,4 +23,5 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 
 ## TODO
 * try recording video from actual usb video output, then try to reproduce error in quartz to share with others to get help debuggin
+* contact Paul Bourke for help becuase he seems like a smart guy http://paulbourke.net/
 * add pictures to this github readme
