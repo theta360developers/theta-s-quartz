@@ -1,7 +1,10 @@
-# Theta S Live Resize in Quartz
-An experiment to use OS X Quartz Composer to transform Ricoh Theta S live feed dual fisheye to equirectangular
+# Theta S Fisheye to Equirectangular in Quartz for live video
+An experiment to use OS X Quartz Composer to transform Ricoh Theta S live feed dual fisheye to equirectangular.
 
-goal is to create a quartz filter that can be used in camtwist or others to adjust live the output of the theta-s to be suitable for projecting on a web sphere
+Goal is to create a Quartz composition that can be used in camtwist or other live video streaming software to adjust live the output of the theta-s to be suitable for projecting on a web sphere. The flow will go:
+* Theta S via USB or HDMI > computer
+* Computer to use this Quartz composition from within Camtwist > Media encoder > HLS (via cloud encoding service) > front-end code
+* Front-end needs equirectangular image, see this example: https://aframe.io/examples/showcase/sky/
 
 ## Current state - not working
 * It has the main components to crop a 16:9 live stream from theta
