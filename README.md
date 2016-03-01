@@ -17,6 +17,9 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * Paul Bourke - Converting a fisheye image into a panoramic or perspective projection - http://paulbourke.net/dome/fish2/
 * Another attempt using opencv instead of quartz: https://github.com/kscottz/dewarp/blob/master/fisheye/defish.py
 * Another nice blog post: http://www.kscottz.com/fish-eye-lens-dewarping-and-panorama-stiching/
+* Theta-S camera: https://theta360.com/en/about/theta/s.html
+* Sample input file (raw dual fisheye from theta-s): https://github.com/kfarr/theta-s-quartz/blob/master/theta-s-raw-Frame-01-03-2016-02-00-34.jpg
+* Example of desired output (this is post-processed by theta-s software, but not available for live streaming): https://github.com/kfarr/theta-s-quartz/blob/master/desired-output-R0010093.jpg
 
 ## How to run
 * Download quartz composer from Apple's developer site http://developer.apple.com/downloads by searching for "Graphics Tools for Xcode"
