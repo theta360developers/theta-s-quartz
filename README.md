@@ -1,20 +1,22 @@
 # Convert Theta-S Live Video from Fisheye to Equirectangular via Quartz
 An experiment to use OS X Quartz Composer to transform Ricoh Theta S live feed dual fisheye to equirectangular.
 
-Goal is to create a Quartz composition that can be used in camtwist or other live video streaming software to adjust live the output of the theta-s to be suitable for projecting on a web sphere. The flow will be something like this:
+Goal is to create a Quartz composition that can be used in camtwist or other live video streaming software to adjust live the output of the theta-s to be suitable for using in a 360' web panorama plugin. The flow will be something like this:
 * Theta S via USB or HDMI > Computer
-* Computer to use this Quartz composition from within Camtwist > Media encoder > HLS (via cloud encoding service) > front-end code
-* Front-end needs equirectangular image, see this example: https://aframe.io/examples/showcase/sky/
+* Computer to use this Quartz composition from within Camtwist > Media encoder > HLS (via cloud encoding service) > web front-end
+* Web front-end needs equirectangular image, see this example: https://aframe.io/examples/showcase/sky/
 
 ## Current state - not working
-* It has the main components to crop a 16:9 live stream from theta
-* It attempst to crop to 1 of the 2 fisheyes, then rotate 90'
-* Then to feed the isolated fisheye into the fish2sphere quartz plugin
-* The quartz plugin doesn't like the cropped and resized input, it returns only black
-* quartz plugin DOES work as expected when feeding in image instead
+* It attempts to take theta footage, crop to 1 of the 2 fisheyes, then rotate 90'
+* Then to feed this cropped and isolated fisheye into the fish2sphere quartz plugin
+* The fish2sphere quartz plugin doesn't like the cropped and resized input, it returns only black
+** Providing fish2spherewith a non-cropped / rotated version of the live feed from theta-s results in a non-black image, however it is not formatted correctly as equirectangular
+* quartz plugin DOES work as expected when feeding in image instead in the example (still needs some additional cropping post-output and some add'l adjustment, but proof of concept is there)
 
 ## Some helpful docs
 * Paul Bourke - Converting a fisheye image into a panoramic or perspective projection - http://paulbourke.net/dome/fish2/
+* Another attempt using opencv instead of quartz: https://github.com/kscottz/dewarp/blob/master/fisheye/defish.py
+* Another nice blog post: http://www.kscottz.com/fish-eye-lens-dewarping-and-panorama-stiching/
 
 ## How to run
 * Download quartz composer from Apple's developer site http://developer.apple.com/downloads by searching for "Graphics Tools for Xcode"
