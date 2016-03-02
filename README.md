@@ -6,9 +6,9 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * Computer to use this Quartz composition from within Camtwist > Media encoder > HLS (via cloud encoding service) > web front-end
 * Web front-end needs equirectangular image, see this example: https://aframe.io/examples/showcase/sky/
 
-## Current state - DOES NOT WORK
-* It attempts to take theta footage, crop to 1 of the 2 fisheyes, then rotate 90'
-* Then this feed should be sent to fish2sphere quartz patch by Paul Bourke - WORK IN PROGRESS PLEASE HELP
+## Current state - Proof of concept works
+* theta-crop.qtz - this effect crops and rotates 90' the "left" camera on the live stream. in theory this is required to "isolate" this camera before using the other filter
+* theta-fish2sphere.qtz - this "routes" camtwist through Paul Bourke's custom quartz patch project (see references below)
 
 ### Example images: 
 * Sample input file (raw dual fisheye from theta-s): https://github.com/kfarr/theta-s-quartz/blob/master/theta-s-raw-Frame-01-03-2016-02-00-34.jpg
@@ -16,11 +16,12 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 
 ## To use:
 * Download camtwist http://camtwiststudio.com/, install to applications
-* Add theta-fish2sphere.qtz to Applications > CamTwist > Effects
+* Add theta-fish2sphere.qtz and theta-crop.qtz to Applications > CamTwist > Effects
 * Open CamTwist
 * Step 1: View > Main Window, Double click "Webcam" and choose RICOH THETA S
 * Step 2: Choose filter theta-fish2sphere
 * Step 3: Modify settings if you'd like, not sure it'll make much of a difference yet. Make sure to press enter after you enter new values.
+* Bonus prize: can you figure out how to use both crop and fish2sphere effects at the same time? doesn't seem to work for me. Maybe change crop settings?
 
 ## How to modify:
 * Download quartz composer from Apple's developer site http://developer.apple.com/downloads by searching for "Graphics Tools for Xcode"
