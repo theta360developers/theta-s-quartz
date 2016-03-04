@@ -7,7 +7,6 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * Web front-end needs equirectangular image, see this example: https://aframe.io/examples/showcase/sky/
 
 ## Current state - Proof of concept works
-* theta-crop.qtz - this effect crops and rotates 90' the "left" camera on the live stream. in theory this is required to "isolate" this camera before using the other filter
 * theta-fish2sphere.qtz - this "routes" camtwist through Paul Bourke's custom quartz patch project (see references below)
 
 ### Example images: 
@@ -21,13 +20,11 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * Step 1: View > Main Window, Double click "Webcam" and choose RICOH THETA S
 * Step 2: Choose filter theta-fish2sphere
 * Step 3: Modify settings if you'd like, not sure it'll make much of a difference yet. Make sure to press enter after you enter new values.
-* Bonus prize: can you figure out how to use both crop and fish2sphere effects at the same time? doesn't seem to work for me. Maybe change crop settings?
 
 ## How to modify:
 * Download quartz composer from Apple's developer site http://developer.apple.com/downloads by searching for "Graphics Tools for Xcode"
 * Open theta-fish2sphere.qtz file in quartz composer
 * Change input image source to theta s on USB or HDMI input live stream, or use sample image from this git project's root dir
-
 
 ## Dev notes for Quartz Composer
 * For testing / developing in QC, you'll need to unhook the "Image (Required)" patch and use instead the image patch "image-example of 720p theta-s stream"
