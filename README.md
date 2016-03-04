@@ -30,11 +30,6 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * For testing / developing in QC, you'll need to unhook the "Image (Required)" patch and use instead the image patch "image-example of 720p theta-s stream"
 * Ideally in QC during dev one could use video input patch to use as reference for modifying settings, but it is not consistent with behavior when ran inside of camtwist
 
-## TODO
-* try recording video from actual usb video output, then try to reproduce error in quartz to share with others to get help debuggin
-* contact Paul Bourke for help because he seems like a smart guy http://paulbourke.net/
-* add pictures to this github readme
-
 ## Some helpful docs
 * Paul Bourke - Converting a fisheye image into a panoramic or perspective projection - http://paulbourke.net/dome/fish2/
 * Another attempt using opencv instead of quartz: https://github.com/kscottz/dewarp/blob/master/fisheye/defish.py
