@@ -14,10 +14,10 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 
 ### Reference Images
 
-!['Reference Input Image'](https://github.com/kosso/theta-s-quartz/blob/master/THETAS_DUALFISH_REF_1280_720.png?raw=true =800x)
+!['Reference Input Image'](https://github.com/kosso/theta-s-quartz/blob/master/THETAS_DUALFISH_REF_1280_720.png?raw=true =650x)
 
 
-!['Example Output Image .. so far'](https://github.com/kosso/theta-s-quartz/blob/master/OUTPUT.png?raw=true =800x)
+!['Example Output Image .. so far'](https://github.com/kosso/theta-s-quartz/blob/master/OUTPUT.png?raw=true =650x)
 
 
 ### Example images: 
