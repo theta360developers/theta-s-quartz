@@ -12,12 +12,13 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * @kosso modified version added : theta-fish2sphere_K.qtz with reference images to play with. 
 
 
-### Reference Images
+### Reference Input Image
 
-!['Reference Input Image'](https://github.com/kosso/theta-s-quartz/blob/master/THETAS_DUALFISH_REF_1280_720.png?raw=true =650x)
+!['Reference Input Image'](https://github.com/kosso/theta-s-quartz/blob/master/THETAS_DUALFISH_REF_1280_720.png?raw=true =600x)
 
+##### Test Output Snapshot
 
-!['Example Output Image .. so far'](https://github.com/kosso/theta-s-quartz/blob/master/OUTPUT.png?raw=true =650x)
+!['Example Output Image .. so far'](https://github.com/kosso/theta-s-quartz/blob/master/OUTPUT.png?raw=true =600x)
 
 
 ### Example images: 
