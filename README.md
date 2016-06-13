@@ -1,6 +1,8 @@
 # CamTwist Effect Plugin to Convert Theta-S Live Video from Fisheye to Equirectangular via Quartz
 An experiment to use OS X Quartz Composer to transform Ricoh Theta S live feed dual fisheye to equirectangular.
 
+NOTE JUN 2016: Ricoh has since released native OS drivers to accomplish this: https://theta360.com/en/support/download/
+
 Goal is to create a Quartz composition that can be used in camtwist or other live video streaming software to adjust live the output of the theta-s to be suitable for using in a 360' web panorama plugin. The flow will be something like this:
 * Theta S via USB or HDMI > Computer
 * Computer to use this Quartz composition from within Camtwist > Media encoder > HLS (via cloud encoding service) > web front-end
