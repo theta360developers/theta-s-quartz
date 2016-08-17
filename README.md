@@ -11,7 +11,7 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 ## Current state - Proof of concept works
 * theta-fish2sphere.qtz - this "routes" camtwist through Paul Bourke's custom quartz patch project (see references below)
 
-* @kosso modified version added : theta-fish2sphere_K.qtz with reference images to play with. 
+* @kosso modified version added : theta-fish2sphere_K.qtz with reference images to play with.
 
 
 ### Reference Input Image
@@ -23,7 +23,7 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 !['Example Output Image .. so far'](https://github.com/kosso/theta-s-quartz/blob/master/OUTPUT.png?raw=true =600x)
 
 
-### Example images: 
+### Example images:
 * Sample input file (raw dual fisheye from theta-s): https://github.com/kfarr/theta-s-quartz/blob/master/theta-s-raw-Frame-01-03-2016-02-00-34.jpg
 * Example of desired output (this is post-processed by theta-s software, but not available for live streaming): https://github.com/kfarr/theta-s-quartz/blob/master/desired-output-R0010093.jpg
 
@@ -50,3 +50,5 @@ Goal is to create a Quartz composition that can be used in camtwist or other liv
 * Another attempt use processing.org PDE: https://github.com/theta360developers/THETA-S-LiveViewer-P5
 * Another nice blog post: http://www.kscottz.com/fish-eye-lens-dewarping-and-panorama-stiching/
 * Theta-S camera: https://theta360.com/en/about/theta/s.html
+
+![Analytics](https://ga-beacon.appspot.com/UA-73311422-5/theta-s-quartz)
